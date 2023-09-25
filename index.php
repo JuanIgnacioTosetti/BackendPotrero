@@ -1,5 +1,5 @@
 <?php
-
+/*
 //punto 1
 
 echo 'Hola Mundo!';
@@ -52,5 +52,32 @@ $pi = 3.14;
 $perimetro = 2 * $pi * $radio;
 $area = $pi * ($radio * $radio);
 echo 'Perimetro: ',$perimetro,' Area: ',$area;
+*/
+$n = 4;
+echo "<h1>Practica 2</h1>";
+if ($n > 0){
+    echo $n . " Es un numero positivo <br>";
+}
 
+if ($n > 1 && $n < 10){
+    echo $n." El número ingresado es mayor a 1 y menor a 10 <br>";
+}
+
+if ($n <= 2 || $n >= 10){
+    echo $n . " El número ingresado es mayor o igual a 10 o menor a 2 <br>";
+} else {
+    echo "El numero no pudo ser validado <br>";
+}
+
+$numero1 = 7; $numero2 = 7;
+
+if($numero1 > $numero2){
+    //mostrar suma y resta
+    echo "La suma de los dos numeros es de: ".$numero1 + $numero2. "<br>La resta de los dos mismos numeros es de: ".$numero1 - $numero2;
+} else if($numero2 > $numero1){
+    //muestro multiplicacion y division
+    echo "La multiplicacion de los numeros es de: ". $numero1 * $numero2."<br> La division es de: ". $numero2/$numero1. " y el resto es de ".$numero2%$numero1;
+} else if($numero1 == $numero2){
+    echo "Los números ingresados son iguales";
+}
 ?>
