@@ -52,7 +52,7 @@ $pi = 3.14;
 $perimetro = 2 * $pi * $radio;
 $area = $pi * ($radio * $radio);
 echo 'Perimetro: ',$perimetro,' Area: ',$area;
-*/
+
 $n = 4;
 echo "<h1>Practica 2</h1>";
 if ($n > 0){
@@ -79,5 +79,57 @@ if($numero1 > $numero2){
     echo "La multiplicacion de los numeros es de: ". $numero1 * $numero2."<br> La division es de: ". $numero2/$numero1. " y el resto es de ".$numero2%$numero1;
 } else if($numero1 == $numero2){
     echo "Los números ingresados son iguales";
+}*/
+
+print "<h2> DE 0 A 20</h2>";
+for($i=0; $i <= 20; $i++) { 
+    print "$i, ";
 }
+echo "<br>";
+
+
+print "<h2> DE 20 A 0</h2>";
+for($j = 20; $j >= 0; $j--){
+    print "$j, ";
+}
+echo "<br>";
+print "<h2> NUMEROS PARES</h2>";
+$i = 0;
+while ($i <= 20){
+    if($i%2 == 0){
+        print "$i, ";
+    }
+    $i++;
+}
+
+print "<br>";
+print "<h2>NUMEROS IMPARES</h2>";
+$i = 0;
+while ($i <= 20){
+    if ($i%2==1){
+        print "$i, ";
+    }
+    $i++;
+}
+
+print "<br>";
+print "<h2>SUMA</h2>";
+$i=0; $suma=0;
+while ($i<=20){
+    print "$i ";
+    $suma = $suma + $i;
+    $i++;
+}
+print "= $suma";
+
+print "<br>";
+print "<h2>SUMA DE PARES</h2>";
+$i=0; $suma=0;
+while($i<=20){
+    if($i%2==0){
+        $suma=$suma+$i;
+    }
+}
+
+
 ?>
