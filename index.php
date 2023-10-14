@@ -125,11 +125,15 @@ print "= $suma";
 print "<br>";
 print "<h2>SUMA DE PARES</h2>";
 $i=0; $suma=0;
+
 while($i<=20){
     if($i%2==0){
-        $suma=$suma+$i;
+        print $i. " ";
+        $suma+=$i;
     }
+    $i++;
 }
+print "= $suma";
 
 
 ?>
