@@ -17,7 +17,7 @@ textarea{resize: none !important;}
     padding: 20px;
     max-width: 500px;
     width: 100%;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(9, 10, 24, 0.37);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -43,13 +43,13 @@ textarea{resize: none !important;}
 }
 
 .glass-card .btn-primary {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
 }
 
 .glass-card .btn-primary:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 100, 255, 0.2);
 }
 
 .glass-card .form-control{
@@ -100,12 +100,13 @@ textarea{resize: none !important;}
 /* boton cancelar */
 .glass-card .btn-secondary {
     background-color: rgba(255, 0, 0, 0.1);
-    border: 1px solid rgba(255, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
 }
 
 .glass-card .btn-secondary:hover {
     background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .glass-card .btn-secondary:active {
