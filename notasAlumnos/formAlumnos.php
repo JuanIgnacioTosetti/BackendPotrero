@@ -1,13 +1,13 @@
 <?php
 
-if (!isset($_GET["nombre"])) {
-    print "Faltan ingresar el nombre";
-    
-} elseif (!isset($_GET["nota"])) {
-    print "Falta ingresar la nota";
+if (!isset($_GET["nombre"]) && isset($_GET["nota"])) {
+    echo "Faltan ingresar el nombre";
 
-} elseif (isset($_GET["nombre"]) && isset($_GET["nota"])) {
-    $nombre = trim($_GET["nombre"]);
+} elseif (!isset($_GET["nota"]) && isset($_GET["nombre"])) {
+    echo "Falta ingresar la nota";
+
+} else{
+    $nombre = $_GET["nombre"];
     $nota = $_GET["nota"];
 
     if (is_numeric($nota) && $nota >= 0 && $nota <= 10) {
