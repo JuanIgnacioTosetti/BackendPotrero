@@ -60,7 +60,7 @@ print "= $suma";
 print "<br> <h2>FACTORIAL</h2>";
 $fact = 8;
 $suma = 1;
-for ($i=1 ; $i < $fact ; $i++ ) { 
+for ($i=1 ; $i <= $fact ; $i++ ) { 
     $suma *= $i;
 }
 
