@@ -1,14 +1,16 @@
 <?php
-
-if (!isset($_GET["nombre"]) && isset($_GET["nota"])) {
+$nombre = $_GET["nombre"];
+$nota = $_GET["nota"];
+if(empty($nombre) && empty($nota)){
+    echo "Faltan ingresar datos";
+}elseif (empty($nombre)) {
     echo "Faltan ingresar el nombre";
 
-} elseif (!isset($_GET["nota"]) && isset($_GET["nombre"])) {
+} elseif (empty($nota)) {
     echo "Falta ingresar la nota";
 
-} else{
-    $nombre = $_GET["nombre"];
-    $nota = $_GET["nota"];
+} else {
+    
 
     if (is_numeric($nota) && $nota >= 0 && $nota <= 10) {
         if ($nota >= 0 && $nota <= 2) {
@@ -23,7 +25,7 @@ if (!isset($_GET["nombre"]) && isset($_GET["nota"])) {
             echo "$nombre, Sobresaliente";
         }
     } else {
-        print "El dato ingresado no es una nota válida";
+        echo "El dato ingresado no es una nota válida";
     }
 }
 ?>
