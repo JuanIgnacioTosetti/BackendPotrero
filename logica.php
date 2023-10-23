@@ -60,7 +60,7 @@ print "= $suma";
 print "<br> <h2>FACTORIAL</h2>";
 $fact = 8;
 $suma = 1;
-for ($i=1 ; $i <= $fact ; $i++ ) { 
+for ($i=1 ; $i < $fact ; $i++ ) { 
     $suma *= $i;
 }
 
@@ -136,4 +136,70 @@ foreach($array5 as $i => $ciudades){
 
 echo "<br>";
 echo "<br>";
+
+
+//FUNCIONESSSS
+echo "<h2> Funciones </h2>";
+//a
+function calcularCuadrado($lado){
+    $superficie = 4 * $lado;
+    $perimetro = $lado * $lado;
+
+    echo "El perimetro del cuadrado de lado $lado es de $perimetro <br>";
+    echo "La superficie del cuadrado de lado $lado es de $superficie <br>";
+}
+
+calcularCuadrado(5);
+echo "<br>";
+
+//b
+function transformarMayusculas($texto){
+    echo strtoupper($texto) . "<br>";
+}
+
+function transformarMinusculas($texto){
+    echo strtolower($texto) . "<br>";
+}
+
+transformarMayusculas("Hola Como estas?");
+transformarMinusculas("HOla QUE tal?");
+
+//c
+function diasDelMes($mes) {
+    if ($mes == 2) {
+        return "Febrero generalmente tiene 28 días o 29 en un año bisiesto.";
+    } elseif (in_array($mes, [4, 6, 9, 11])) {
+        return "30 días";
+    } elseif (in_array($mes, [1, 3, 5, 7, 8, 10, 12])) {
+        return "31 días";
+    } else {
+        return "Número de mes no válido.";
+    }
+}
+$n = 4;
+echo "El mes $n tiene: " . diasDelMes($n);
+echo "<br>";
+echo "<br>";
+
+//d
+function esPalindromo($cadena){
+    $cadena = strtolower($cadena); //las hago minusculas
+
+    //borrar espacios
+    $cadena = preg_replace("/[^a-zA-Z0-9]/", "", $cadena);
+
+    if ($cadena == strrev($cadena)) {
+        return true;
+    } else{
+        return false;
+    }
+}
+$cadena = "Somos o no somos";
+
+if (esPalindromo($cadena)){
+    echo  $cadena ." Es Palindromo";
+}else{
+    echo $cadena ." No es palindromo";
+}
+
 ?>
