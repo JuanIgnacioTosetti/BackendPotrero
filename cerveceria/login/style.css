@@ -17,7 +17,7 @@ body {
     overflow: hidden;
 }
 
-.container {
+/* .container {
     background-color: var(--primary-color);
     width: 600px;
     height: 450px;
@@ -27,7 +27,7 @@ body {
     place-items: center;
     line-height: 1.5;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
-}
+} */
 
 .container::after {
     content: '';
