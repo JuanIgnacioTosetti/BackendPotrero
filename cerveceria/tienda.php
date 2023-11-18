@@ -8,15 +8,23 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="http://localhost/backend/cerveceria/css/style.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body style="background-color: #efefef;">
    
 <?php include "./plantillas/navbar.php" ?>
-    <section class="tienda">
+    <section class="tienda pag__tienda">
         <h2 class="tienda__title">Nuestra Tienda</h2>
+        <div class="filtros">
+          <a class="btn__tienda">Filtro 1</a> 
+          <a class="btn__tienda">Filtro 2</a> 
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
         <div class="productos">
             <!-- Producto 1 -->
             <div class="card" style="width: 18rem;">

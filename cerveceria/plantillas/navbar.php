@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navigation">
+<nav class="navbar navbar-expand-lg">
         <div class="contenedor__img navbar-brand">
             <img src="./img/logo.png" alt="logo">
         </div>
@@ -9,16 +9,13 @@
     
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <!-- <li class="nav-item"><a class="nav-link" href="./login/login.html">Iniciar Sesión</a></li> -->
                 <li class="nav-item"><a href="./login/login.html"><i class="bi bi-person-circle"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="./tienda.php">Tienda</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Beer Truck</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Caracol Negro</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
             </ul>
-        </div>
-    
-        <div class="contenedor-redes-carrito">
+            <div class="contenedor-redes-carrito">
             <div class="redes">
                 <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
                 <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -30,5 +27,8 @@
                 </a>
             </div>
         </div>
+        </div>
+    
+        
     </nav>
     

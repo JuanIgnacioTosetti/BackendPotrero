@@ -38,5 +38,5 @@
             </div>
           </div>
     </div>
-    <a class="btn__tienda" href="./tienda.html">Ver más</a> 
+    <a class="btn__tienda" href="./tienda.php">Ver más</a> 
 </section>
